@@ -2,67 +2,60 @@
  * @license Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
-
 CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
 	// %REMOVE_START%
+	config.skin = 'minimalist';
+    config.extraPlugins = 'oembed,widget,colorbutton,autogrow';
+    config.autoGrow_minHeight = 250;
+    config.resize_enabled = false; 
+    config.toolbarGroups = [
+        { name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+        { name: 'editing', groups: [ 'find', 'selection', 'spellchecker', 'editing' ] },
+        { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+        { name: 'colors', groups: [ 'colors' ] },
+        { name: 'links', groups: [ 'links' ] },
+        { name: 'forms', groups: [ 'forms' ] },
+        { name: 'tools', groups: [ 'tools' ] },
+        { name: 'insert', groups: [ 'insert' ] },
+        { name: 'others', groups: [ 'others' ] },
+        { name: 'paragraph', groups: [ 'list', 'indent', 'align', 'bidi', 'paragraph' ] },
+        { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+        { name: 'about', groups: [ 'about' ] }
+    ];
+    config.removeButtons = 'Underline,Subscript,Superscript,Cut,Copy,Paste,PasteText,PasteFromWord,Undo,Redo,Anchor,SpecialChar,Maximize,Format';
 	config.plugins =
-		'about,' +
-		'a11yhelp,' +
 		'basicstyles,' +
-		'bidi,' +
 		'blockquote,' +
-		'clipboard,' +
 		'colorbutton,' +
 		'colordialog,' +
-		'contextmenu,' +
 		'dialogadvtab,' +
-		'div,' +
 		'elementspath,' +
 		'enterkey,' +
 		'entities,' +
-		'filebrowser,' +
-		'find,' +
-		'flash,' +
 		'floatingspace,' +
 		'font,' +
 		'format,' +
-		'forms,' +
-		'horizontalrule,' +
 		'htmlwriter,' +
 		'image,' +
 		'iframe,' +
-		'indentlist,' +
 		'indentblock,' +
 		'justify,' +
-		'language,' +
 		'link,' +
 		'list,' +
 		'liststyle,' +
 		'magicline,' +
 		'maximize,' +
-		'newpage,' +
-		'pagebreak,' +
 		'pastefromword,' +
 		'pastetext,' +
-		'preview,' +
-		'print,' +
-		'removeformat,' +
-		'resize,' +
-		'save,' +
-		'selectall,' +
-		'showblocks,' +
 		'showborders,' +
-		'smiley,' +
 		'sourcearea,' +
 		'specialchar,' +
 		'stylescombo,' +
-		'tab,' +
 		'table,' +
 		'tabletools,' +
-		'templates,' +
 		'toolbar,' +
 		'undo,' +
 		'wysiwygarea';
