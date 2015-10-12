@@ -8,7 +8,7 @@ CKEDITOR.editorConfig = function(config) {
     // config.uiColor = '#AADC6E';
     // %REMOVE_START%
     config.skin = 'minimalist';
-    config.extraPlugins = 'oembed,widget,colorbutton,autogrow,font';
+    config.extraPlugins = 'oembed,widget,colorbutton,autogrow,font,dropdown';
     config.autoGrow_minHeight = 250;
     config.resize_enabled = false;
 

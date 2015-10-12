@@ -47,6 +47,17 @@ blockquote
 	padding-right: 20px;
 	border-right-width: 5px;
 }
+.cke_panel_list{
+    list-style-type: none;
+    /* margin: 0; */
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+}
+
+
 
 a
 {
